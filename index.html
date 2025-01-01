@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
 </head>
+
 <body>
     <nav>
         <div class="nav-header">
@@ -24,10 +24,15 @@
             <li><a href="#about">About</a></li>
             <li><a href="#product">Products</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="orders"><a href="#order">Order</a></li>
         </ul>
         <div class="nav-search" id="nav-search-1">
             <input type="text" placeholder="Search">
             <span><i class='bx bx-search-alt'></i></span>
+        </div>
+        <div class="add-cart">
+           <i class='bx bx-cart'></i>
+           <span id="count">0</span>
         </div>
     </nav>
 
@@ -120,103 +125,33 @@
     </section>
 
     <section class="section-container product-container" id="product">
-        <h2 class="section-header">product</h2>
-        <div class="product-grid">
-            
-            <div class="product-card">
-                <h4>Stackable Chair</h4>
-                <p>Rs. 7,499</p>
-                <img src="images/product-1.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Lamp tool</h4>
-                <p>Rs. 2,999</p>
-                <img src="images/product-2.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Dining Chair</h4>
-                <p>Rs. 6,499</p>
-                <img src="images/product-3.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Hand Base Lamp</h4>
-                <p>Rs. 2,999</p>
-                <img src="images/product-4.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Glass Dinning Table</h4>
-                <p>Rs. 19,999</p>
-                <img src="images/product-13.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Modern wall Lamp</h4>
-                <p>Rs. 1,999</p>
-                <img src="images/product-11.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Stylish Chair</h4>
-                <p>Rs. 3,999</p>
-                <img src="images/product-5.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Modern Sofa</h4>
-                <p>Rs. 13,499</p>
-                <img src="images/product-9.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Modern zumar</h4>
-                <p>Rs. 13,499</p>
-                <img src="images/product-12.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Wooden Zula</h4>
-                <p>Rs. 11,499</p>
-                <img src="images/product-15.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Wingback Chair</h4>
-                <p>Rs. 8,999</p>
-                <img src="images/product-6.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Vintage Chair</h4>
-                <p>Rs. 3,499</p>
-                <img src="images/product-7.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Modern Chair</h4>
-                <p>Rs. 5,499</p>
-                <img src="images/product-8.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Wall Lamp</h4>
-                <p>Rs. 1,499</p>
-                <img src="images/product-10.png" alt="">
-            </div>
-
-            <div class="product-card">
-                <h4>Wooden Dinning Table</h4>
-                <p>Rs. 15,499</p>
-                <img src="images/product-14.png" alt="">
-            </div>
-
-
-
+        <h2 class="section-header">Products</h2>
+        <div class="product-grid" id="grid">
         </div>
     </section>
+
+    
+    <section class="oreder">
+        <div class="cart-tab" id="order">
+            <h1>Shopping Cart</h1>
+            <div class="list-cart" id="list-cart">
+                <div class="item"></div>
+            </div>
+            
+            <div class="foot">
+                <div class="totals">
+                    <h3>Total</h3>
+                    <h3 id="total">Rs 0.00</h3>
+                </div>
+    
+                <div class="btn-2">
+                    <button class="close">Close</button>
+                    <button class="checkout" id="checkout" onclick="checkoutClick()" >Check Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="section-container client-container">
         <div class="client-content">
