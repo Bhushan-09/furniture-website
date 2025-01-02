@@ -243,13 +243,3 @@ const categories = [...new Set(product.map((item)=>
         }
 
     }
-
-    let msg=document.querySelector('#msg')
-
-    function checkoutClick(){
-            window.location.href="http://127.0.0.1:5500/checkout.html";
-    }
-
-
-
-

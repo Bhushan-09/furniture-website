@@ -293,7 +293,7 @@ nav{
     grid-template-columns: repeat(2,1fr);
     gap: 0.2rem;
 }
-.btn-2 button{
+.btn-2 div{
     background-color: rgb(241, 161, 11);
     border: none;
     padding: 0.8rem;
